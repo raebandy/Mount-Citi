@@ -1,0 +1,58 @@
+/* ---- Base Styles ----- */
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* body {
+    
+}
+.container {
+} */
+
+h1 {
+    color: thistle;
+    text-align: center;
+
+}
+
+nav {
+    height: 12vh;
+    background: rgba(2, 2, 2, 1);
+    opacity: 0.6;
+}
+
+main {
+    height: calc(100vh - 20vh);
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: rgb(250, 237, 239);
+}
+
+footer {
+    height: 8vh;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/* div.background {
+    background: url(../images/ramen.jpg) repeat;
+    border: 2px solid black;
+  }
+  
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  } */
+  
