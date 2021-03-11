@@ -1,4 +1,4 @@
-/* ---- Base Styles -----
+/* ---- Base Styles -----*/
 
 * {
     box-sizing: border-box;
@@ -8,13 +8,12 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* body {
-    
-}
 .container {
-} */
+  min-width: 320px;
+  max-width: 1920;
+}
 
-/* h1 {
+h1 {
     color: thistle;
     text-align: center;
 
@@ -36,9 +35,9 @@ footer {
     height: 8vh;
     text-align: center;
     background-color: lightgray;
-}  */
+} 
 
-/* div.background {
+div.background {
     background: url(../images/ramen.jpg) repeat;
     border: 2px solid black;
   }
@@ -54,5 +53,27 @@ footer {
     margin: 5%;
     font-weight: bold;
     color: #000000;
-  } */
+  }
+
+
+  /* ----Media Queries---- */
+
+  @media (max-width: 575px) {
+    nav{border: 5px solid red;
+    }
+  }
   
+  @media (min-width: 576px) and (max-width: 768px) {
+    nav{border: 5px solid blue;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    nav{border: 5px solid orange;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1920px) {
+    nav{border: 5px solid yellow;
+    }
+  }
