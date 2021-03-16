@@ -55,6 +55,11 @@ div.background {
     color: #000000;
   }
 
+  /*-----Contact Form Styles------*/
+  
+  .form {
+    
+  }
 
   /* ----Media Queries---- */
 
@@ -77,3 +82,5 @@ div.background {
     nav{border: 5px solid yellow;
     }
   }
+
+  
