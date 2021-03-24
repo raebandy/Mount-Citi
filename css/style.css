@@ -2,8 +2,16 @@
 
 * {
     box-sizing: border-box;
+    /* padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    display: block; */
   }
-
+body {
+  min-height: 100 vh;
+}
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -14,32 +22,43 @@ html {
   display: block;
 }
 
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  margin: 0;
+}
+
+#main-header {
+  color: rgb(109, 52, 61);
+  text-align: center;
+  padding: 1em;
+  background: papayawhip; 
+  margin: 0;
+}
 
 main {
-  height: 100vh;
   padding: 3rem 1.5rem 1rem 1.5rem;
   background-color: rgb(250, 237, 239);
 }
 
-#main-header {
-    color: rgb(109, 52, 61);
-    text-align: center;
-    padding: 1em;
 
-}
 
-#menu {
+/* #menu {
   display: none;
-}
+} */
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background: rgb(248, 246, 246);
+.nav { 
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: rgb(248, 246, 246);
    
 }
 
@@ -70,7 +89,14 @@ a:active {
   color: rgb(107, 59, 59);
 }
 
+p {
+  margin: 0;
+  padding-top: .8em;
+}
 
+form {
+  background: lightgrey;
+}
 
 footer {
     height: 8vh;
