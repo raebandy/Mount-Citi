@@ -11,8 +11,8 @@
     <!-- <script src="/js/script.js"></script> -->
 </head>
 <body>
-    <header>
-        <h1 id="main-header">Contact us!</h1>
+    <div class="header">
+        <h1 id="title">Contact us!</h1>
         <nav>
         <!-- <span id="menu">Menu</span> -->
             <ul class="nav">
@@ -22,57 +22,64 @@
                 <a href="history.html">History</a>  
             </ul>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <h3>We want to hear from you!</h3>
-        <p>
-            Let us know how you heard about us, for a chance to win a free gift such as a free night at one of our local lodges or a free dinner voucher with a local restaurant!
-        </p>
-        <form action="contact.html" method="post">
-            <div class="form">
-                <h2>Enter your info below!</h1>
-
-                
-                    <label for="fname">First name</label><br>
-                    <input type="text" id="fname" name="user_fname">
-               
-                    <label for="lname">Last name</label><br>
-                    <input type="text" id="lname" name="user_lname">
-                 
-                    <label for="name">Email address</label><br>
-                    <input type="text" id="email" name="user_email"><br>
-          
-                    <label for="user_experience">How did you find us?</label>
-
-                <div class="labelGroup">    
-                    <input type="radio" id="facebook" name="user_experience" value="facebook">
-                    <label for="facebook">Facebook</label><br>
-                </div>
-
-                
-                <div class="labelGroup">     
-                    <input type="radio" id="twitter" name="user_experience" value="twitter">
-                    <label for="twitter">Twitter</label><br>
-                </div>
-                <div class="labelGroup">  
-                    <input type="radio" id="instagram" name="user_experience" value="instagram">
-                    <label for="instagram">Instagram</label><br>
-                </div>
-                <div class="labelGroup">  
-                    <input type="radio" id="friend" name="user_experience" value="friend">
-                    <label for="friend">Friend or relative</label><br>
-                </div>
-                 <div class="labelGroup">  
-                    <input type="radio" id="other" name="user_experience" value="other">
-                    <label for="other">Other</label><br>
-                </div>
-                    <input type="textarea" id="other" name="user_experience"><br>
-
-                <input type="submit" value="Submit!">
+        <h2>We want to hear from you!</h2>
+        <div class="wrapper">
+            <div class="column">
+                <p>
+                    Let us know how you heard about us, for a chance to win a free gift such as a free night at one of our local lodges or a free dinner voucher with a local restaurant!
+                </p>
             </div>
+            <div class="column">
+                <form action="contact.html" method="post">
+                    <div class="form">
+                        <h2>Enter your info below!</h1>
 
-        </form>
+                        
+                            <label for="fname">First name</label><br>
+                            <input type="text" id="fname" name="user_fname">
+                    
+                            <label for="lname">Last name</label><br>
+                            <input type="text" id="lname" name="user_lname">
+                        
+                            <label for="name">Email address</label><br>
+                            <input type="text" id="email" name="user_email"><br>
+                
+                            <label for="user_experience">How did you find us?</label>
+
+                        <div class="labelGroup">    
+                            <input type="radio" id="facebook" name="user_experience" value="facebook">
+                            <label for="facebook">Facebook</label><br>
+                        </div>
+
+                        
+                        <div class="labelGroup">     
+                            <input type="radio" id="twitter" name="user_experience" value="twitter">
+                            <label for="twitter">Twitter</label><br>
+                        </div>
+                        <div class="labelGroup">  
+                            <input type="radio" id="instagram" name="user_experience" value="instagram">
+                            <label for="instagram">Instagram</label><br>
+                        </div>
+                        <div class="labelGroup">  
+                            <input type="radio" id="friend" name="user_experience" value="friend">
+                            <label for="friend">Friend or relative</label><br>
+                        </div>
+                        <div class="labelGroup">  
+                            <input type="radio" id="other" name="user_experience" value="other">
+                            <label for="other">Other</label><br>
+                        </div>
+                            <input type="textarea" id="other" name="user_experience"><br>
+
+                        <input type="submit" value="Submit!">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
         
     </main>
 
