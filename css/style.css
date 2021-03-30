@@ -11,6 +11,7 @@
   }
 body {
   height: 100vh;
+  max-width: 1300px;
 }
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -55,29 +56,35 @@ main {
 }
 
 
+button {
+  width: 100%;
+  padding: .5em 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 0px;
+  background: rgb(190, 166, 166)
+}
 
-/* #menu {
+#menu {
   display: none;
-} */
+}
 
-.nav { 
+nav ul { 
   text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   background: rgb(248, 246, 246);
   box-shadow: 1px 1px 3px gray;
-   
 }
 
-.nav a {
+nav a {
   display: block;
 	font-size: 1.125em;
 	font-weight: 300;
   margin: 0;
 	padding: .3em;
 	border-bottom: 1px solid #ebecec;
-
 }
 
 
@@ -111,15 +118,24 @@ a:hover {
 
 
 footer {
-  height: 8vh;
+  height: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background: lightgray;
 } 
- 
+
+#mail_to {
+  display: inline;
+
+}
 footer p {
   margin: 0;
   padding-top: .6em;
 }
+
+#click_here {
+  color: pink;
+}
+
 
 /*-----Contact Form Styles------*/
 
@@ -161,15 +177,23 @@ input[type=submit] {
   {
     /* nav{border: 5px solid blue;
     } */
-    .nav { 
+
+    #toggle-button {
+      display: none;
+    }
+
+    #menu {
+      display: block;
+    }
+
+    nav ul{ 
       list-style-type: none;
       margin: 0;
-      padding: 0;
-      background: rgb(248, 246, 246);
-       
+      padding: .3em;
+      background: rgb(248, 246, 246);     
     }
     
-    .nav a {
+    nav a {
       display: inline;
       text-align: center;
       font-size: 1.125em;
@@ -177,13 +201,13 @@ input[type=submit] {
       margin: 0;
       padding: 1em;
       border-bottom: 1px solid #ebecec;
+      
 
     }
     
     a:hover {
       background: rgb(206, 205, 205);
       padding: 0 1em 0 1em;
-
     }
 
     #welcome {
@@ -205,7 +229,7 @@ input[type=submit] {
     }
   }
   
-  @media (min-width: 769px) {    
+  @media (min-width: 960px) {    
     
     .header {
       flex-direction: row;
@@ -214,7 +238,7 @@ input[type=submit] {
       justify-content: space-between;
     }
 
-    .nav {
+    nav ul {
       display: flex; 
       padding: 1em;
       background: papayawhip; 
@@ -222,7 +246,7 @@ input[type=submit] {
       box-shadow: none;  
     }
 
-    .nav a {
+    nav a {
       box-shadow: none;
     }
 
