@@ -2,12 +2,6 @@
 
 * {
     box-sizing: border-box;
-    /* padding: 0;
-    margin: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    display: block; */
   }
 body {
   height: 100vh;
@@ -53,6 +47,13 @@ main {
   padding: 0rem 1.5rem 1rem 1.5rem;
   background-color: rgb(250, 237, 239);
   min-height: calc(100vh - 8vh);
+}
+
+.column {
+  background: rgb(241, 234, 234);
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 1px 1px 3px gray
 }
 
 
@@ -109,6 +110,7 @@ a:hover {
   padding: .3em;
 
 }
+
 .wrapper{
   margin: 0;
   background: rgb(228, 222, 222);
@@ -123,13 +125,16 @@ footer {
   background: lightgray;
 } 
 
-#mail_to {
-  display: inline;
-
-}
 footer p {
   margin: 0;
   padding-top: .6em;
+}
+
+/*----Link Styles----*/
+
+#mail_to {
+  display: inline;
+
 }
 
 #click_here {
@@ -172,14 +177,9 @@ input[type=submit] {
 
   /* ----Media Queries---- */
   
-  @media (min-width: 576px) 
-  /* and (max-width: 768px)  */
-  {
-    /* nav{border: 5px solid blue;
-    } */
-
+  @media (min-width: 576px) { /*---Tablet---*/
     #toggle-button {
-      display: none;
+    display: none;
     }
 
     #menu {
@@ -201,8 +201,6 @@ input[type=submit] {
       margin: 0;
       padding: 1em;
       border-bottom: 1px solid #ebecec;
-      
-
     }
     
     a:hover {
@@ -223,13 +221,11 @@ input[type=submit] {
     
     .column {
       width: calc(50% - 1em);
-      background: rgb(241, 234, 234);
-      padding: 1em;
-      box-shadow: 1px 1px 3px gray;
+      margin: 0;
     }
   }
   
-  @media (min-width: 960px) {    
+  @media (min-width: 960px) {  /*---Desktop---*/
     
     .header {
       flex-direction: row;
@@ -253,14 +249,11 @@ input[type=submit] {
     .title {
       justify-content: left;
     }
-
   
     a:hover {
       background: none;
       color: slategrey;
     }
-    
-
 
   }
 
