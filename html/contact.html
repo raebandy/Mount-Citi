@@ -14,8 +14,8 @@
     <div class="header">
         <h1 id="title">Contact us!</h1>
         <nav>
-        <!-- <span id="menu">Menu</span> -->
-            <ul class="nav">
+            <button id="toggle-button" onclick="myButton()">Menu</button>
+            <ul id="menu">
                 <a href="index.html">Home</a>
                 <a href="lodging.html">Lodging</a>
                 <a href="todo.html">Things To Do</a>
@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="column">
-                <form action="contact.html" method="post">
+                <form action="contact.html" method="post" name="contact_form">
                     <div class="form">
                         <h2>Enter your info below!</h1>
 
@@ -73,7 +73,7 @@
                         </div>
                             <input type="textarea" id="other" name="user_experience"><br>
 
-                        <input type="submit" value="Submit!">
+                        <input type="submit" name="submit" value="Submit!" onclick="ValidateEmail(document.contact_form.user_email)">
                         
                     </div>
                 </form>
@@ -84,10 +84,40 @@
     </main>
 
     <footer>
-        <p>&copy 2021</p>
-        <a href="index.html">Home</a>
+        <p>&copy 2021</p><a href="index.html">Home</a><br>
+        <p id="mail_to">Want to chat with us?</p><a href="mailto:email@example.com"> Click here!</a>
         
     </footer>
+    <script>
+        function myButton() {
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+
+        function ValidateEmail(inputText) {
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+            if(inputText.value.match(mailformat))
+                {
+                alert("Valid email address!");
+                document.form1.text1.focus();
+                return true;
+            }
+            else
+                {
+                alert("You have entered an invalid email address!");
+                document.form1.text1.focus();
+                return false;
+            }
+        }
+    </script>
+    
+    
     
 </body>
 </html>
