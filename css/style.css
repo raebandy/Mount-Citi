@@ -5,7 +5,7 @@
   }
 body {
   height: 100vh;
-  max-width: 1465px;
+  
 }
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -39,18 +39,18 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 1em;
-  background: papayawhip; 
+  background: #C1D9D4;   
   margin: 0;
 }
 
 main {
   padding: 0rem 1.5rem 1rem 1.5rem;
-  background-color: rgb(250, 237, 239);
+  background-color: #D9A38F;
   min-height: calc(100vh - 8vh);
 }
 
 .column {
-  background: rgb(241, 234, 234);
+  background: #FFD2C2;
   padding: 1em;
   margin: 1em;
   box-shadow: 1px 1px 3px gray
@@ -61,7 +61,7 @@ button {
   width: 100%;
   padding: .5em 0;
   text-align: center;
-  background-color: lightblue;
+  background-color: #4F778C;
   margin-top: 0px;
   background: rgb(190, 166, 166)
 }
@@ -69,6 +69,10 @@ button {
 #menu {
   display: none;
 }
+
+#toggle-button {
+  background: #4F778C;
+  }
 
 nav ul { 
   text-align: center;
@@ -164,13 +168,17 @@ input[type=text] {
 }
 
 input[type=submit] {
-  background: rgb(190, 166, 166);
+  background: #4F778C;
   box-shadow: 1px 1px 3px gray;
+}
+
+input[type=radio] {
+  width: 20%;
 }
 
 .labelGroup {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -200,7 +208,7 @@ input[type=submit] {
       font-weight: 300;
       margin: 0;
       padding: 1em;
-      border-bottom: 1px solid #ebecec;
+      border-bottom: none;
     }
     
     a:hover {
@@ -227,17 +235,21 @@ input[type=submit] {
   
   @media (min-width: 960px) {  /*---Desktop---*/
     
+    #toggle-button {
+      display: none;
+      }
+
     .header {
       flex-direction: row;
       align-items: center;
-      background: papayawhip;
+      background: #C1D9D4;
       justify-content: space-between;
     }
 
     nav ul {
       display: flex; 
       padding: 1em;
-      background: papayawhip; 
+      background: #C1D9D4; 
       margin: 0;
       box-shadow: none;  
     }

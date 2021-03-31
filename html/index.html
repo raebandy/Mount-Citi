@@ -14,7 +14,7 @@
             <div class="header">
                 <h1 id="title">Mount Citi</h1>
                     <nav>
-                        <button id="toggle-button" onclick="myButton()">Menu</button>
+                        <button id="toggle-button" onclick="myButton()" style="display:block">Menu</button>
                         <ul id="menu">
                             <a href="lodging.html">Lodging</a>
                             <a href="todo.html">Things To Do</a>
@@ -52,10 +52,10 @@
                 function myButton() {
                     var menu = document.getElementById("menu");
 
-                    if (menu.style.display === "none") {
-                        menu.style.display = "block";
-                    } else {
+                    if (menu.style.display === "block") {
                         menu.style.display = "none";
+                    } else {
+                        menu.style.display = "block";
                     }
                 }
             </script>
