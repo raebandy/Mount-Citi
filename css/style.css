@@ -63,11 +63,10 @@ button {
   text-align: center;
   background-color: #4F778C;
   margin-top: 0px;
-  background: #4F778C;
 }
 
 #menu {
-  display: block;
+  display: none;
 }
 
 
@@ -185,20 +184,19 @@ input[type=radio] {
 @media (min-width: 576px) { /*---Tablet---*/
   
   #toggle-button {
-  display: none;
+    display: none;
   }
 
-  ul #menu {
-    display: block;
-  }
-
-  nav ul{ 
+  nav ul { 
     list-style-type: none;
     margin: 0;
     padding: .3em;
     background: rgb(248, 246, 246);     
   }
-  
+
+  #menu {
+    display: block;
+  }
   nav a {
     display: inline;
     text-align: center;
@@ -242,7 +240,8 @@ input[type=radio] {
  
     #toggle-button {
       display: none;
-    } 
+    }
+
 
     nav ul {
       display: flex; 
